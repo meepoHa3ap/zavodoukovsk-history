@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6; /* Улучшает читаемость текста */
+    line-height: 1.6;
 }
 
 header {
@@ -14,7 +14,7 @@ header {
     text-align: center;
     padding: 20px;
     position: relative;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Добавляем тень для глубины */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 h1, h2 {
@@ -22,7 +22,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 2em; /* Увеличиваем заголовок */
+    font-size: 2em;
 }
 
 .coat-of-arms {
@@ -31,11 +31,30 @@ h1 {
     position: absolute;
     top: 20px;
     right: 20px;
-    border: 3px solid #fff; /* Белая рамка вместо серой для контраста */
+    border: 3px solid #fff;
     border-radius: 50%;
-    background-color: white; /* Фон для GIF с прозрачностью */
+    background-color: white;
     object-fit: contain;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Тень для герба */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.nav-menu li a:hover {
+    text-decoration: underline;
 }
 
 main {
@@ -46,10 +65,10 @@ main {
 
 section {
     margin-bottom: 40px;
-    background-color: white; /* Белый фон для секций */
+    background-color: white;
     padding: 15px;
-    border-radius: 5px; /* Скругленные углы */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -64,12 +83,11 @@ ul {
     padding-left: 20px;
 }
 
-/* Галерея фотографий */
 .photo-gallery {
     display: flex;
-    gap: 15px; /* Уменьшаем отступ для 8 фото */
+    gap: 15px;
     flex-wrap: wrap;
-    justify-content: center; /* Центрируем фото */
+    justify-content: center;
 }
 
 .photo-gallery img {
@@ -77,15 +95,47 @@ ul {
     height: 200px;
     object-fit: cover;
     border: 2px solid #ddd;
-    border-radius: 5px; /* Скругленные углы для фото */
-    transition: transform 0.3s; /* Плавное увеличение при наведении */
+    border-radius: 5px;
+    transition: transform 0.3s;
 }
 
 .photo-gallery img:hover {
-    transform: scale(1.05); /* Увеличение при наведении */
+    transform: scale(1.05);
 }
 
-/* Футер */
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+.to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.to-top:hover {
+    background-color: #34495e;
+}
+
+body.scrolled .to-top {
+    display: block;
+}
+
+/* Обновлённый футер */
 footer {
     text-align: center;
     padding: 10px;
@@ -94,5 +144,19 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Тень сверху */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 2px 0; /* Уменьшаем отступы между строк */
+    font-size: 0.7em; /* Делаем текст меньше (было ~1em, теперь 0.8em = 80% от стандартного) */
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
