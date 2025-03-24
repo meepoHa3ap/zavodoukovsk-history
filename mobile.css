@@ -38,6 +38,10 @@
         height: auto;
     }
 
+    .map-container {
+        height: 300px;
+    }
+
     .footer-content {
         flex-direction: column;
         gap: 5px;
@@ -57,7 +61,7 @@
     }
 
     .to-top {
-        bottom: 50px; /* Чуть выше на мобильных */
+        bottom: 50px;
         padding: 5px 10px;
     }
 }
