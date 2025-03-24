@@ -132,8 +132,16 @@
     </main>
 
     <footer>
-        <p>© 2025 История Заводоуковска</p>
-        <p>Создано: MeepoHa3ap | <a href="mailto:example@email.com">Написать мне</a></p>
+        <div class="footer-content">
+            <span>© 2025 История Заводоуковска</span>
+            <span>Создано: MeepoHa3ap</span>
+            <form>
+                <input type="text" id="name" name="name" placeholder="Имя">
+                <input type="email" id="email" name="email" placeholder="Email">
+                <textarea id="message" name="message" placeholder="Сообщение"></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
     </footer>
 
     <button class="to-top" onclick="window.scrollTo(0, 0)">Наверх</button>
