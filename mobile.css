@@ -1,0 +1,63 @@
+@media (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .coat-of-arms {
+        width: 100px;
+        height: 100px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .photo-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .to-top {
+        bottom: 50px; /* Чуть выше на мобильных */
+        padding: 5px 10px;
+    }
+}
