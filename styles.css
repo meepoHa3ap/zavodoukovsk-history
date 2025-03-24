@@ -118,7 +118,7 @@ figcaption {
 
 .to-top {
     position: fixed;
-    bottom: 20px;
+    bottom: 40px;
     right: 20px;
     padding: 10px 20px;
     background-color: #2c3e50;
@@ -139,7 +139,7 @@ body.scrolled .to-top {
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 5px; /* Уменьшаем отступы */
     background-color: #2c3e50;
     color: white;
     position: fixed;
@@ -148,16 +148,51 @@ footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
-footer p {
-    margin: 2px 0;
-    font-size: 0.8em;
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Расстояние между элементами */
+    font-size: 0.9em; /* Уменьшаем текст до 70% от стандартного */
 }
 
-footer a {
-    color: #ddd;
-    text-decoration: none;
+.footer-content span {
+    margin: 0; /* Убираем лишние отступы */
 }
 
-footer a:hover {
-    text-decoration: underline;
+form {
+    display: flex;
+    gap: 5px; /* Уменьшаем расстояние между полями формы */
+}
+
+input, textarea {
+    padding: 3px; /* Уменьшаем внутренние отступы */
+    font-size: 0.7em; /* Уменьшаем размер текста */
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+input[type="text"], input[type="email"] {
+    width: 80px; /* Фиксируем ширину для компактности */
+}
+
+textarea {
+    width: 100px;
+    height: 20px; /* Уменьшаем высоту */
+    resize: none; /* Отключаем изменение размера */
+}
+
+button {
+    padding: 3px 8px; /* Уменьшаем кнопку */
+    font-size: 0.7em;
+    background-color: #34495e;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e5c76;
 }
